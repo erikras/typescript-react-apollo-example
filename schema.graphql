@@ -1,0 +1,19 @@
+type User {
+  _id: String!
+  firstName: String!
+  lastName: String!
+  email: String!
+}
+
+# The "Query" type is the root of all GraphQL queries.
+# (A "Mutation" type will be covered later on.)
+type Query {
+  user: User
+}
+
+query User {
+  user {
+    firstName
+    lastName
+  }
+}
